@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/index";
 import Survey from "./pages/Survey/index";
-import ErrorPage from "./components/Error/index";
+import ErrorPage from "./components/ErrorPage";
 
 const root = createRoot(document.getElementById("root"));
 
