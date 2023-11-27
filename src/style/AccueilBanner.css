@@ -1,0 +1,18 @@
+.acl-banner {
+  height: 50%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/IMG.svg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 30%);
+  background-blend-mode: darken;
+  border-radius: 25px;
+}
+h1 {
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 48px;
+  color: #ffffff;
+}

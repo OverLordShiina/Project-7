@@ -7,7 +7,7 @@ function Banner() {
     <div className="ksa-banner">
       <img src={Logo} alt="Kasa Logo" />
       <div className="nav-menu">
-        <Link to="/">accueil</Link>
+        <Link to="/">Accueil</Link>
         <Link to="*">A Propos</Link>
       </div>
     </div>

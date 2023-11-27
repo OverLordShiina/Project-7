@@ -1,0 +1,9 @@
+.gallery {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  color: #ffffff;
+  border-radius: 25px;
+}

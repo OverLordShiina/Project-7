@@ -1,17 +1,21 @@
+import Banner from "../../components/Banner";
+import Thumb from "../../components/Thumb";
+import "../../style/AccueilBanner.css";
+import "../../style/Gallery.css";
+//import { Link } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>This is Home, right?</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="accueil">
+      <Banner />
+      <div className="acl-banner">
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
+      <div className="gallery">
+        <Thumb />
+        <Thumb />
+        <Thumb />
+      </div>
     </div>
   );
 }
