@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
 import Thumb from "../../components/Thumb";
+import BannerBg from "../../assets/IMG.svg";
 import "../../style/AccueilBanner.css";
 import "../../style/Gallery.css";
 //import { Link } from "react-router-dom";
@@ -9,11 +10,10 @@ function App() {
     <div id="accueil">
       <Banner />
       <div className="acl-banner">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={BannerBg} alt="banner background" />
+        <span className="banner-text">Chez vous, partout et ailleurs</span>
       </div>
       <div className="gallery">
-        <Thumb />
-        <Thumb />
         <Thumb />
       </div>
     </div>

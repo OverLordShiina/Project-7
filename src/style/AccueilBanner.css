@@ -1,16 +1,22 @@
 .acl-banner {
-  height: 50%;
   width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
-  background-image: url("../assets/IMG.svg");
-  background-position: center;
-  background-color: rgba(0, 0, 0, 30%);
+  padding-top: 20px;
+}
+.acl-banner img {
+  max-height: 223px;
+  width: 100%;
+  object-fit: cover;
+  color: rgba(0, 0, 0, 30%);
   background-blend-mode: darken;
   border-radius: 25px;
 }
-h1 {
+
+.banner-text {
+  position: absolute;
+  align-self: center;
   font-weight: 500;
   font-family: "Montserrat";
   font-size: 48px;
