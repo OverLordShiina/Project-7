@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/index";
-import Survey from "./pages/Survey/index";
+import About from "./pages/About/about";
 import ErrorPage from "./components/ErrorPage";
 
 const root = createRoot(document.getElementById("root"));
@@ -12,7 +12,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/survey" element={<Survey />} />
+        <Route path="/about" element={<About />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>

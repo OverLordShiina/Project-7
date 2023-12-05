@@ -1,21 +1,24 @@
-.ksa-banner {
+.acl-banner {
   width: 90%;
   margin: auto;
-  color: #ff6060;
-  text-align: right;
-  padding: 20px;
   display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.acl-banner img {
+  max-height: 223px;
+  width: 100%;
+  object-fit: cover;
+  color: rgba(0, 0, 0, 30%);
+  background-blend-mode: darken;
+  border-radius: 25px;
 }
 
-a {
-  color: #ff6060;
-  text-decoration: none;
-  font-size: 24px;
+.banner-text {
+  position: absolute;
+  align-self: center;
+  font-weight: 500;
   font-family: "Montserrat";
-}
-.nav-menu a:first-child {
-  margin-right: 25px;
+  font-size: 48px;
+  color: #ffffff;
 }

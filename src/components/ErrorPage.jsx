@@ -1,5 +1,5 @@
 import Logo from "../assets/404.svg";
-import Banner from "./Banner";
+import Banner from "./Header";
 import "../style/ErrorPage.css";
 import { Link } from "react-router-dom";
 function ErrorPage() {

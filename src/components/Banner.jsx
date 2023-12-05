@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.svg";
+import BannerBg from "../assets/IMG.svg";
 import "../style/Banner.css";
 
 function Banner() {
   return (
-    <div className="ksa-banner">
-      <img src={Logo} alt="Kasa Logo" />
-      <div className="nav-menu">
-        <Link to="/">Accueil</Link>
-        <Link to="*">A Propos</Link>
-      </div>
+    <div className="acl-banner">
+      <img src={BannerBg} alt="banner background" />
+      <span className="banner-text">Chez vous, partout et ailleurs</span>
     </div>
   );
 }
