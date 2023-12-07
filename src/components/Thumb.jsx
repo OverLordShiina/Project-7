@@ -18,6 +18,7 @@ function Thumb() {
   const listItems = data.map((logement) => (
     <li key={logement.id} className="thumb">
       <img src={logement.cover} alt="Thumbnail Logement" />
+      <div></div>
       <p>{logement.title}</p>
     </li>
   ));

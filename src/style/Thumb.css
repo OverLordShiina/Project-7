@@ -1,8 +1,10 @@
 .thumb {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
   max-height: 340px;
   width: 30%;
+  margin-bottom: 20px;
 }
 
 .list-thumb {
@@ -16,14 +18,22 @@
 li img {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
   border-radius: 10px;
 }
 
 li p {
   position: absolute;
+  bottom: 5px;
+  margin: 0px 10px 10px 10px;
   align-self: auto;
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: 500;
+}
+li div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
