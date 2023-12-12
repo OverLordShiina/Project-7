@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+//import arrowUp from "../assets/arrowUp.svg";
+//import arrowDown from "../assets/arrowDown.svg";
 import "../style/Collapsible.css";
 
 const Collapsible = (props) => {
@@ -9,7 +11,7 @@ const Collapsible = (props) => {
     setOpen(!open);
   };
   return (
-    <div>
+    <div className="collapsible">
       <button onClick={toggle}>{props.label}</button>
 
       <div

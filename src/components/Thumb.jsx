@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../style/Thumb.css";
 
 function Thumb() {
@@ -17,9 +18,11 @@ function Thumb() {
 
   const listItems = data.map((logement) => (
     <li key={logement.id} className="thumb">
-      <img src={logement.cover} alt="Thumbnail Logement" />
-      <div></div>
-      <p>{logement.title}</p>
+      <Link to="/${logement:id}">
+        <img src={logement.cover} alt="Thumbnail Logement" />
+        <div></div>
+        <p>{logement.title}</p>
+      </Link>
     </li>
   ));
   return <ul className="list-thumb">{listItems}</ul>;

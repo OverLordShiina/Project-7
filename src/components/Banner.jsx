@@ -1,11 +1,10 @@
-import BannerBg from "../assets/IMG.svg";
 import "../style/Banner.css";
 
-function Banner() {
+function Banner({ bannerBg, text = "" }) {
   return (
     <div className="acl-banner">
-      <img src={BannerBg} alt="banner background" />
-      <span className="banner-text">Chez vous, partout et ailleurs</span>
+      <img src={bannerBg} alt="banner background" />
+      <span className="banner-text">{text}</span>
     </div>
   );
 }

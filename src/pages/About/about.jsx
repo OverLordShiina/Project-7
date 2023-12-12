@@ -1,13 +1,15 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
+import BannerBg from "../../assets/BannerBg-2.svg";
 import Collapsible from "../../components/Collapsible";
+import "../../style/About.css";
 
 function About() {
   return (
     <div>
       <Header />
-      <Banner />
-      <div className="About">
+      <Banner bannerBg={BannerBg} />
+      <div className="about">
         <Collapsible label="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
@@ -15,7 +17,6 @@ function About() {
             régulièrement vérifiées par nos équipes.
           </p>
         </Collapsible>
-        <hr />
         <Collapsible label="Respect">
           <p>
             La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -23,7 +24,6 @@ function About() {
             entraînera une exclusion de notre plateforme.
           </p>
         </Collapsible>
-        <hr />
         <Collapsible label="Service">
           <p>
             Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -31,7 +31,6 @@ function About() {
             moindre question.
           </p>
         </Collapsible>
-        <hr />
         <Collapsible label="Sécurité">
           <p>
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
