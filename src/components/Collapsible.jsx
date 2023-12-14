@@ -6,7 +6,7 @@ import "../style/Collapsible.css";
 const Collapsible = (props) => {
   const [open, setOpen] = useState(false);
   const contentRef = useRef();
-  if (contentRef.current) console.log(contentRef.current.scrollHeight);
+  if (contentRef.current);
   const toggle = () => {
     setOpen(!open);
   };

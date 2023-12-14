@@ -18,7 +18,7 @@ function Thumb() {
 
   const listItems = data.map((logement) => (
     <li key={logement.id} className="thumb">
-      <Link to="/${logement:id}">
+      <Link to={`/logement/${logement.id}`}>
         <img src={logement.cover} alt="Thumbnail Logement" />
         <div></div>
         <p>{logement.title}</p>
