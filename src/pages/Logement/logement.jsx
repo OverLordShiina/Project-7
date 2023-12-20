@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import Carrousel from "../../components/Carrousel";
 import Collapsible from "../../components/Collapsible";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -26,14 +27,14 @@ function Logement() {
   return (
     <div>
       <Header />
-      <div className="carrousel"></div>
-      <div className="title"></div>
+      <Carrousel slides={logementData?.pictures} />
+      <div className="title">{logementData?.title}</div>
       <div className="tag"></div>
       <div className="host"></div>
       <div className="rating"></div>
       <div className="lgm-content">
         <Collapsible label="Description">
-          <p>description</p>
+          <p>{logementData?.description}</p>
         </Collapsible>
         <Collapsible label="Équipements">
           <p>equipments</p>
@@ -44,3 +45,4 @@ function Logement() {
 }
 
 export default Logement;
+//<>{logementData ? (      ) : <Navigate to="/*" />}</>
