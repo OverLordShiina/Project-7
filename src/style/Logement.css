@@ -1,5 +1,23 @@
+.logement {
+  display: flex;
+}
 .lgm-content {
   display: flex;
   justify-content: space-between;
   margin: 5%;
+}
+
+.lgm-title {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+.lgm-title :first-child {
+  font-size: 36px;
+}
+.lgm-tag {
+  display: flex;
+  gap: 5px;
 }

@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
-import Carrousel from "../../components/Carrousel";
+//import Carrousel from "../../components/Carrousel";
 import Collapsible from "../../components/Collapsible";
+import Tag from "../../components/Tag";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "../../style/Logement.css";
@@ -23,15 +24,29 @@ function Logement() {
   const logementData = data.find(
     (logement) => logement.id === jsonId.logementId
   );
+
+  const tags = logementData?.tags.map((tags, index) => {
+    return <Tag key={index} tags={tags} />;
+  });
+
   console.log(logementData);
+
   return (
     <div>
       <Header />
-      <Carrousel slides={logementData?.pictures} />
-      <div className="title">{logementData?.title}</div>
-      <div className="tag"></div>
-      <div className="host"></div>
-      <div className="rating"></div>
+      <div>
+        <div className="lgm-title">
+          <span>{logementData?.title}</span>
+          <span>{logementData?.location}</span>
+        </div>
+        <div className="lgm-tag">{tags}</div>
+      </div>
+      <div>
+        <div className="lgm-host">
+          <span>host</span>
+        </div>
+        <div className="lgm-rating"></div>
+      </div>
       <div className="lgm-content">
         <Collapsible label="Description">
           <p>{logementData?.description}</p>
@@ -46,3 +61,4 @@ function Logement() {
 
 export default Logement;
 //<>{logementData ? (      ) : <Navigate to="/*" />}</>
+//<Carrousel slides={logementData?.pictures} />
