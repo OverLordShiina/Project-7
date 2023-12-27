@@ -9,7 +9,7 @@
   border-radius: 25px;
   background-position: center;
   background-size: cover;
-  background-image: "url(${slides[currentIndex].url})";
+  /*background-image: url(${slides[currentIndex].url});*/
 }
 
 .crsl-leftArrow {

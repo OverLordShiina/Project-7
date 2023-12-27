@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
-//import Carrousel from "../../components/Carrousel";
+import ErrorPage from "../../components/ErrorPage";
+import Carrousel from "../../components/Carrousel";
 import Collapsible from "../../components/Collapsible";
 import Tag from "../../components/Tag";
 import { useParams } from "react-router-dom";
@@ -21,23 +22,28 @@ function Logement() {
     fetchInfo();
   }, []);
 
-  const logementData = data.find(
-    (logement) => logement.id === jsonId.logementId
-  );
+  let logementData;
+  if (data) {
+    logementData = data.find((logement) => logement.id === jsonId.logementId);
+  }
 
   const tags = logementData?.tags.map((tags, index) => {
     return <Tag key={index} tags={tags} />;
   });
 
-  console.log(logementData);
+  if (!logementData) {
+    return <ErrorPage />;
+  }
+  console.log(data, logementData);
 
   return (
     <div>
       <Header />
+      <Carrousel slides={logementData?.pictures} />
       <div>
         <div className="lgm-title">
-          <span>{logementData?.title}</span>
-          <span>{logementData?.location}</span>
+          <span>logementData?.title</span>
+          <span>logementData?.location</span>
         </div>
         <div className="lgm-tag">{tags}</div>
       </div>
@@ -49,7 +55,7 @@ function Logement() {
       </div>
       <div className="lgm-content">
         <Collapsible label="Description">
-          <p>{logementData?.description}</p>
+          <p>logementData?.description</p>
         </Collapsible>
         <Collapsible label="Équipements">
           <p>equipments</p>
@@ -60,5 +66,3 @@ function Logement() {
 }
 
 export default Logement;
-//<>{logementData ? (      ) : <Navigate to="/*" />}</>
-//<Carrousel slides={logementData?.pictures} />
