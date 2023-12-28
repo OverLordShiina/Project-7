@@ -3,21 +3,38 @@
 }
 .lgm-content {
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
-  margin: 5%;
+  margin: 0% 5%;
+}
+.lgm-content > div {
+  flex: 50%;
+}
+.lgm-content li {
+  display: flex;
 }
 
+.lgm-info {
+  margin: 0% 5%;
+}
 .lgm-title {
   display: flex;
   flex-direction: column;
   color: #ff6060;
   font-size: 18px;
   font-weight: 500;
+  padding-bottom: 1rem;
 }
+
 .lgm-title :first-child {
   font-size: 36px;
 }
 .lgm-tag {
   display: flex;
   gap: 5px;
+  padding-bottom: 1rem;
+}
+
+.lgm-profile {
+  margin: 0% 5%;
 }

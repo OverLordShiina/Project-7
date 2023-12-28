@@ -1,15 +1,14 @@
-.crsl-slidesStyle {
+.crsl-sliderStyle {
   height: 100%;
   position: relative;
+  margin: 0% 5%;
 }
 
 .crsl-image {
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  background-position: center;
-  background-size: cover;
-  /*background-image: url(${slides[currentIndex].url});*/
+  object-fit: cover;
 }
 
 .crsl-leftArrow {
@@ -26,4 +25,11 @@
   right: 32px;
   z-index: 1;
   cursor: pointer;
+}
+
+.crsl-position {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  z-index: 1;
 }

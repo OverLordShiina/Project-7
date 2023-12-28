@@ -28,7 +28,7 @@ const Carrousel = ({ slides }) => {
           {currentIndex + 1}/{slides.length}
         </p>
       </div>
-      <div className="crsl-image"></div>
+      <img src={slides[currentIndex]} alt="Carrousel" className="crsl-image" />
     </div>
   );
 };
