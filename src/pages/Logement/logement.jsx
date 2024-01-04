@@ -1,54 +1,44 @@
 import Header from "../../components/Header";
-import ErrorPage from "../../components/ErrorPage";
 import Carrousel from "../../components/Carrousel";
 import Collapsible from "../../components/Collapsible";
 import Tag from "../../components/Tag";
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Navigate, useParams } from "react-router-dom";
 import "../../style/Logement.css";
+import { useFetch } from "../../Hooks/useFetch";
 
 function Logement() {
   const jsonId = useParams();
   const url = "http://localhost:3000/logements.json";
-  const [data, setData] = useState([]);
-
-  const fetchInfo = () => {
-    return fetch(url)
-      .then((res) => res.json())
-      .then((d) => setData(d));
-  };
-
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+  const { data, isPending, error } = useFetch(url);
 
   let logementData;
   if (data) {
     logementData = data.find((logement) => logement.id === jsonId.logementId);
   }
-
-  const slides = logementData?.pictures;
-  const tags = logementData?.tags.map((tags, index) => {
-    return <Tag key={index} tags={tags} />;
-  });
-
-  const equipments = logementData?.equipments.map((equipments, index) => {
-    return <li key={index}>{equipments}</li>;
-  });
+  if (isPending) {
+    return <h1>Loading...</h1>;
+  }
+  if (error) {
+    console.log(error);
+  }
 
   if (!logementData) {
-    return <ErrorPage />;
+    return <Navigate to="/*" />;
   } else {
     return (
       <div>
         <Header />
-        <Carrousel slides={slides} />
+        <Carrousel slides={logementData.pictures} />
         <div className="lgm-info">
           <div className="lgm-title">
-            <span>{logementData?.title}</span>
-            <span>{logementData?.location}</span>
+            <span>{logementData.title}</span>
+            <span>{logementData.location}</span>
           </div>
-          <div className="lgm-tag">{tags}</div>
+          <div className="lgm-tag">
+            {logementData.tags.map((tags, index) => {
+              return <Tag key={index} tags={tags} />;
+            })}
+          </div>
         </div>
         <div className="lgm-profile">
           <div className="lgm-host">
@@ -61,7 +51,11 @@ function Logement() {
             <p>{logementData.description}</p>
           </Collapsible>
           <Collapsible label="Équipements">
-            <p>{equipments}</p>
+            <p>
+              {logementData.equipments.map((equipments, index) => {
+                return <li key={index}>{equipments}</li>;
+              })}
+            </p>
           </Collapsible>
         </div>
       </div>

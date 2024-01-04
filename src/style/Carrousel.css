@@ -1,7 +1,8 @@
 .crsl-sliderStyle {
-  height: 100%;
+  height: 415px;
   position: relative;
   margin: 0% 5%;
+  padding-bottom: 2rem;
 }
 
 .crsl-image {
@@ -13,7 +14,7 @@
 
 .crsl-leftArrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 32px;
   z-index: 1;
   cursor: pointer;
@@ -21,7 +22,7 @@
 
 .crsl-rightArrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 32px;
   z-index: 1;
   cursor: pointer;
@@ -29,7 +30,8 @@
 
 .crsl-position {
   position: absolute;
-  bottom: 5px;
+  color: white;
+  bottom: 2rem;
   left: 50%;
   z-index: 1;
 }

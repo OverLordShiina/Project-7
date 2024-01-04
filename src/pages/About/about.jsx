@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
-import BannerBg from "../../assets/BannerBg-2.svg";
+import BannerBg from "../../assets/BannerBg-2.jpg";
 import Collapsible from "../../components/Collapsible";
 import "../../style/About.css";
 

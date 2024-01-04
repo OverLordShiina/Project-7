@@ -25,7 +25,6 @@ function Thumb() {
       </Link>
     </li>
   ));
-  console.log(listItems);
   return <ul className="list-thumb">{listItems}</ul>;
 }
 

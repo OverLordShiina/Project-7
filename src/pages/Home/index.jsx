@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import Thumb from "../../components/Thumb";
 import Banner from "../../components/Banner";
-import BannerBg from "../../assets/BannerBg-1.svg";
+import BannerBg from "../../assets/BannerBg-1.jpg";
 import "../../style/Gallery.css";
 //import { Link } from "react-router-dom";
 
