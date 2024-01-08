@@ -2,8 +2,9 @@ import Header from "../../components/Header";
 import Thumb from "../../components/Thumb";
 import Banner from "../../components/Banner";
 import BannerBg from "../../assets/BannerBg-1.jpg";
+import Footer from "../../components/Footer";
+
 import "../../style/Gallery.css";
-//import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="gallery">
         <Thumb />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import BannerBg from "../../assets/BannerBg-2.jpg";
 import Collapsible from "../../components/Collapsible";
+import Footer from "../../components/Footer";
+
 import "../../style/About.css";
 
 function About() {
@@ -42,6 +44,7 @@ function About() {
           </p>
         </Collapsible>
       </div>
+      <Footer />
     </div>
   );
 }

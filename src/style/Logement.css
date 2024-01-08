@@ -23,6 +23,14 @@
 .lgm-details li {
   display: flex;
 }
+.lgm-details span {
+  margin: 0.75rem;
+  font-size: 1.1rem;
+}
+.lgm-details p {
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
 
 .lgm-title {
   display: flex;
@@ -46,6 +54,7 @@
 
 .lgm-host {
   display: flex;
+  justify-content: flex-end;
   font-size: 1.1rem;
 }
 
@@ -57,4 +66,8 @@
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.lgm-rating img {
+  height: 2.25rem;
 }

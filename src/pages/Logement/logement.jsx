@@ -2,9 +2,12 @@ import Header from "../../components/Header";
 import Carrousel from "../../components/Carrousel";
 import Collapsible from "../../components/Collapsible";
 import Tag from "../../components/Tag";
+import Footer from "../../components/Footer";
 import { Navigate, useParams } from "react-router-dom";
-import "../../style/Logement.css";
 import { useFetch } from "../../Hooks/useFetch";
+
+import "../../style/Logement.css";
+import Rating from "../../components/Rating";
 
 function Logement() {
   const jsonId = useParams();
@@ -51,7 +54,9 @@ function Logement() {
               </span>
               <img src={logementData.host.picture} alt="host" />
             </div>
-            <div className="lgm-rating"></div>
+            <div className="lgm-rating">
+              <Rating rating={logementData.rating} />
+            </div>
           </div>
         </div>
         <div className="lgm-details">
@@ -66,6 +71,7 @@ function Logement() {
             </p>
           </Collapsible>
         </div>
+        <Footer />
       </div>
     );
   }
