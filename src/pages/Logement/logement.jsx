@@ -25,28 +25,36 @@ function Logement() {
   if (!logementData) {
     return <Navigate to="/*" />;
   } else {
+    const [firstName, lastName] = logementData.host.name.split(" ");
     return (
       <div>
         <Header />
         <Carrousel slides={logementData.pictures} />
-        <div className="lgm-info">
-          <div className="lgm-title">
-            <span>{logementData.title}</span>
-            <span>{logementData.location}</span>
-          </div>
-          <div className="lgm-tag">
-            {logementData.tags.map((tags, index) => {
-              return <Tag key={index} tags={tags} />;
-            })}
-          </div>
-        </div>
-        <div className="lgm-profile">
-          <div className="lgm-host">
-            <span>host</span>
-          </div>
-          <div className="lgm-rating"></div>
-        </div>
         <div className="lgm-content">
+          <div className="lgm-info">
+            <div className="lgm-title">
+              <span>{logementData.title}</span>
+              <span>{logementData.location}</span>
+            </div>
+            <div className="lgm-tag">
+              {logementData.tags.map((tags, index) => {
+                return <Tag key={index} tags={tags} />;
+              })}
+            </div>
+          </div>
+          <div className="lgm-hostInfo">
+            <div className="lgm-host">
+              <span>
+                {firstName}
+                <br />
+                {lastName}
+              </span>
+              <img src={logementData.host.picture} alt="host" />
+            </div>
+            <div className="lgm-rating"></div>
+          </div>
+        </div>
+        <div className="lgm-details">
           <Collapsible label="Description">
             <p>{logementData.description}</p>
           </Collapsible>
