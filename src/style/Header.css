@@ -15,6 +15,30 @@
   text-decoration: none;
   font-size: 24px;
 }
-.nav-menu a:first-child {
-  margin-right: 25px;
+.ksa-header a.active {
+  text-decoration: underline;
+}
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 769px) {
+  .ksa-header {
+    width: 100%;
+    padding: unset;
+  }
+
+  .ksa-header img {
+    height: 47px;
+  }
+
+  .ksa-header a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
 }

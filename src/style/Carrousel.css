@@ -35,3 +35,23 @@
   left: 50%;
   z-index: 1;
 }
+
+@media screen and (max-width: 769px) {
+  .crsl-sliderStyle {
+    padding: 1rem 0;
+    height: 255px;
+    margin: unset;
+  }
+  .crsl-sliderStyle div > img {
+    height: 24px;
+  }
+  .crsl-leftArrow {
+    left: 5px;
+  }
+  .crsl-rightArrow {
+    right: 5px;
+  }
+  .crsl-position {
+    display: none;
+  }
+}

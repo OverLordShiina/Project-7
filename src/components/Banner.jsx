@@ -4,7 +4,7 @@ function Banner({ bannerBg, text = "" }) {
   return (
     <div className="acl-banner">
       <img src={bannerBg} alt="banner background" />
-      <span className="banner-text">{text}</span>
+      <h1 className="banner-text">{text}</h1>
     </div>
   );
 }

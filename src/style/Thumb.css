@@ -43,3 +43,15 @@ li div {
   border-radius: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
+
+@media screen and (max-width: 769px) {
+  .list-thumb {
+    margin: unset;
+  }
+
+  .thumb {
+    min-height: 255px;
+    width: unset;
+    margin-bottom: 20px;
+  }
+}

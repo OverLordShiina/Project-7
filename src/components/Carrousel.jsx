@@ -10,17 +10,31 @@ const Carrousel = ({ slides }) => {
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
+
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  let displayArrow = true;
+  if (slides.length <= 1) {
+    displayArrow = false;
+  }
   return (
     <div className="crsl-sliderStyle">
-      <div className="crsl-leftArrow" onClick={goToPrevious}>
+      <div
+        style={!displayArrow ? { display: "none" } : {}}
+        className="crsl-leftArrow"
+        onClick={goToPrevious}
+      >
         <img src={leftArrow} alt="left arrow" />
       </div>
-      <div className="crsl-rightArrow" onClick={goToNext}>
+      <div
+        style={!displayArrow ? { display: "none" } : {}}
+        className="crsl-rightArrow"
+        onClick={goToNext}
+      >
         <img src={rightArrow} alt="right arrow" />
       </div>
       <div className="crsl-position">

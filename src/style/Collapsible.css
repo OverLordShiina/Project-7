@@ -39,3 +39,10 @@ button img {
   overflow: hidden;
   transition: height ease 0.9s;
 }
+
+@media screen and (max-width: 769px) {
+  .content {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

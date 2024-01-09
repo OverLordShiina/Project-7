@@ -7,3 +7,10 @@
   color: #ffffff;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 769px) {
+  .gallery {
+    margin: unset;
+    background-color: unset;
+  }
+}

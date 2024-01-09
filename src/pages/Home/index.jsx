@@ -10,7 +10,7 @@ function App() {
   return (
     <div id="accueil">
       <Header />
-      <Banner bannerBg={BannerBg} text="Chez vous, partout et ailleurs" />
+      <Banner bannerBg={BannerBg} text={"Chez vous,\npartout et ailleurs"} />
       <div className="gallery">
         <Thumb />
       </div>
