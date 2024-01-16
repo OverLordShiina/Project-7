@@ -4,7 +4,7 @@ import Banner from "../../components/Banner";
 import BannerBg from "../../assets/BannerBg-1.jpg";
 import Footer from "../../components/Footer";
 
-import "../../style/Gallery.css";
+import "../../style/Accueil.css";
 
 function App() {
   return (

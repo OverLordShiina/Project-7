@@ -23,19 +23,20 @@
 }
 
 @media screen and (max-width: 769px) {
+  .acl-banner img {
+    border-radius: 10px;
+  }
+
   .acl-banner {
     margin: 0 0 1.5rem 0;
     height: 111px;
     width: 100%;
   }
 
-  .acl-banner img {
-    border-radius: 10px;
-  }
-
   .banner-text {
     font-size: 24px;
   }
+
   .banner-text {
     white-space: pre-line;
   }

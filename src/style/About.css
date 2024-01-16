@@ -8,4 +8,11 @@
   .about {
     margin: unset;
   }
+  .about span {
+    margin: 0.5rem 0;
+    font-size: 13px;
+  }
+  button {
+    padding: 0 8px;
+  }
 }

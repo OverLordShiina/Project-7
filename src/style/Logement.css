@@ -92,6 +92,11 @@
     gap: 10px;
     flex-wrap: wrap;
   }
+
+  .lgm-tags {
+    font-size: 10px;
+  }
+
   .lgm-hostInfo {
     display: flex;
     flex-flow: row-reverse;
@@ -119,6 +124,10 @@
   }
   .lgm-details span {
     margin: 0.25rem;
-    font-size: 19px;
+    font-size: 13px;
+  }
+
+  .lgm-details p {
+    font-size: 12px;
   }
 }
