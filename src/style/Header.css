@@ -41,8 +41,4 @@
   .nav-menu {
     gap: 1rem;
   }
-
-  a:first-child {
-    text-decoration: underline;
-  }
 }

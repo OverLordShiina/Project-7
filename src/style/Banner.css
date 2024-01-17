@@ -1,11 +1,11 @@
-.acl-banner {
+.banner-pic {
   width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
-.acl-banner img {
+.banner-pic img {
   max-height: 223px;
   width: 100%;
   object-fit: cover;
@@ -23,11 +23,11 @@
 }
 
 @media screen and (max-width: 769px) {
-  .acl-banner img {
+  .banner-pic img {
     border-radius: 10px;
   }
 
-  .acl-banner {
+  .banner-pic {
     margin: 0 0 1.5rem 0;
     height: 111px;
     width: 100%;
@@ -39,5 +39,10 @@
 
   .banner-text {
     white-space: pre-line;
+  }
+  .about-banner {
+    margin: 0 0 1.5rem 0;
+    height: 223px;
+    width: 100%;
   }
 }
