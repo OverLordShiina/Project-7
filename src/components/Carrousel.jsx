@@ -3,6 +3,7 @@ import rightArrow from "../assets/rightArrow.svg";
 import leftArrow from "../assets/leftArrow.svg";
 import "../style/Carrousel.css";
 
+//Prends les images ainsi que leur position contenues dans le props slides pour générer le carrousel et ces fonctionnalités
 const Carrousel = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {

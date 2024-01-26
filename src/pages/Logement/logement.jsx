@@ -9,6 +9,7 @@ import { useFetch } from "../../Hooks/useFetch";
 import "../../style/Logement.css";
 import Rating from "../../components/Rating";
 
+//Page logements utilise le custom hook pour fetch les informations, après un délai affiche le contenu ou redirige vers la page 404 si l'Id est pas valide.
 function Logement() {
   const jsonId = useParams();
   const url = "http://localhost:3000/logements.json";

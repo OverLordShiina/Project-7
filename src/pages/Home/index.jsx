@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 
 import "../../style/Accueil.css";
 
+//Page d'accueil utilise les props du component Banner pour afficher l'image et son texte
 function App() {
   return (
     <div id="accueil">

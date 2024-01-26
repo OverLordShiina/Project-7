@@ -3,6 +3,8 @@ import Banner from "../../components/Header";
 import "../../style/ErrorPage.css";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
+
+//Page 404
 function ErrorPage() {
   return (
     <>

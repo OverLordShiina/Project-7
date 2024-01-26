@@ -1,6 +1,7 @@
 import StarActive from "../assets/star-active.png";
 import StarInactive from "../assets/star-inactive.png";
 
+//Prends le contenu du props rating pour afficher le nombre correspondant d'étoile
 function Rating({ rating }) {
   const stars = parseInt(rating);
   const starEmpty = 5 - stars;

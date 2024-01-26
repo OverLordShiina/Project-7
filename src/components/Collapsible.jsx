@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-//import arrowUp from "../assets/arrowUp.svg";
 import arrowDown from "../assets/arrowDown.svg";
 import "../style/Collapsible.css";
 
+//Fonction du collapsible qui affiche le contenu du props si la condition est activée
 const Collapsible = (props) => {
   const [open, setOpen] = useState(false);
   const contentRef = useRef();

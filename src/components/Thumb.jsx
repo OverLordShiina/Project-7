@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../style/Thumb.css";
 
+//Utilise la data fetched depuis l'URL pour générer les informations dans des vignettes ainsi que la redirection vers la page logement de l'appartement
 function Thumb() {
   const url = "http://localhost:3000/logements.json";
   const [data, setData] = useState([]);

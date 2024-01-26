@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 
 import "../../style/About.css";
 
+//Page A propos qui utilise plusieurs components pour afficher son contenu
 function About() {
   return (
     <div>

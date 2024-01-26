@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 import "../style/Header.css";
-//ajouter un marqueur sous la page actuelle ex:accueil doit être souligner sur la page d'accueil
 
 function Header() {
   return (
